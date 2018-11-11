@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84115EDD21982BF800880448 /* AuthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84115EDB21982BF800880448 /* AuthTableViewCell.swift */; };
+		84115EDE21982BF800880448 /* AuthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84115EDC21982BF800880448 /* AuthTableViewCell.xib */; };
 		8436DE3221905B51002930A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436DE3121905B51002930A9 /* AppDelegate.swift */; };
 		8436DE3921905B5C002930A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8436DE3821905B5C002930A9 /* Assets.xcassets */; };
 		8436DE3C21905B5C002930A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8436DE3A21905B5C002930A9 /* LaunchScreen.storyboard */; };
 		8436DE4721905B5D002930A9 /* StagirovkaProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436DE4621905B5D002930A9 /* StagirovkaProjectTests.swift */; };
 		8436DE5221905B5D002930A9 /* StagirovkaProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436DE5121905B5D002930A9 /* StagirovkaProjectUITests.swift */; };
-		8436DE6221905BC4002930A9 /* AuthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8436DE6121905BC4002930A9 /* AuthView.xib */; };
 		8436DE6421905C69002930A9 /* AuthStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8436DE6321905C69002930A9 /* AuthStoryBoard.storyboard */; };
-		8436DE6821906412002930A9 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436DE6721906412002930A9 /* AuthView.swift */; };
 		8436DE6E219072F0002930A9 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436DE6D219072F0002930A9 /* AuthViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84115EDB21982BF800880448 /* AuthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTableViewCell.swift; sourceTree = "<group>"; };
+		84115EDC21982BF800880448 /* AuthTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthTableViewCell.xib; sourceTree = "<group>"; };
 		8436DE2E21905B51002930A9 /* StagirovkaProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StagirovkaProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8436DE3121905B51002930A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8436DE3821905B5C002930A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,9 +49,7 @@
 		8436DE4D21905B5D002930A9 /* StagirovkaProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StagirovkaProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8436DE5121905B5D002930A9 /* StagirovkaProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StagirovkaProjectUITests.swift; sourceTree = "<group>"; };
 		8436DE5321905B5D002930A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8436DE6121905BC4002930A9 /* AuthView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthView.xib; sourceTree = "<group>"; };
 		8436DE6321905C69002930A9 /* AuthStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthStoryBoard.storyboard; sourceTree = "<group>"; };
-		8436DE6721906412002930A9 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		8436DE6D219072F0002930A9 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,10 +131,10 @@
 		8436DE6021905B80002930A9 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
-				8436DE6121905BC4002930A9 /* AuthView.xib */,
 				8436DE6321905C69002930A9 /* AuthStoryBoard.storyboard */,
 				8436DE6D219072F0002930A9 /* AuthViewController.swift */,
-				8436DE6721906412002930A9 /* AuthView.swift */,
+				84115EDB21982BF800880448 /* AuthTableViewCell.swift */,
+				84115EDC21982BF800880448 /* AuthTableViewCell.xib */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -245,8 +245,8 @@
 			files = (
 				8436DE3C21905B5C002930A9 /* LaunchScreen.storyboard in Resources */,
 				8436DE3921905B5C002930A9 /* Assets.xcassets in Resources */,
-				8436DE6221905BC4002930A9 /* AuthView.xib in Resources */,
 				8436DE6421905C69002930A9 /* AuthStoryBoard.storyboard in Resources */,
+				84115EDE21982BF800880448 /* AuthTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,9 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84115EDD21982BF800880448 /* AuthTableViewCell.swift in Sources */,
 				8436DE3221905B51002930A9 /* AppDelegate.swift in Sources */,
 				8436DE6E219072F0002930A9 /* AuthViewController.swift in Sources */,
-				8436DE6821906412002930A9 /* AuthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
