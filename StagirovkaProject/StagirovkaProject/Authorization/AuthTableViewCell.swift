@@ -14,18 +14,22 @@ class AuthTableViewCell: UITableViewCell {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var logInButton: UIButton!
     
-    let usernameFieldText = "👤 Username"
-    let passwordFieldText = "🔒 Password"
+    private let usernameFieldText = "👤 Username"
+    private let passwordFieldText = "🔒 Password"
+    private let cornerForView = CGFloat(20)
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        circleCorner(corner: 20)
-        // Initialization code
+        circleCorner(corner: cornerForView)
     }
     
     @IBAction func pushLogInButton(_ sender: Any) {
-        let login: String! = usernameField.text
-        let pass: String! = passwordField.text
+        guard let login = usernameField.text else {
+            return
+        }
+        guard let pass = passwordField.text else {
+            return
+        }
         guard (login != usernameFieldText && pass != passwordFieldText) else {
             return
         }
