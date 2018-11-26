@@ -22,9 +22,9 @@ class EmptyCell: BaseTableViewCell {
     override func viewModelChanged() {
         super.viewModelChanged()
         let viewModel = self.viewModel as! EmptyViewModel
-
+        
         //contentView.autoSetDimension(.height, toSize: viewModel.heightCell!)
-
+        
         backgroundColor = viewModel.color
     }
 }

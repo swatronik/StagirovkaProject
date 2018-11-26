@@ -12,8 +12,14 @@ class AuthTextFieldViewCell: BaseTableViewCell {
 
     @IBOutlet weak var textField: UITextField!
     
-    static var textFieldArray = [("Username","login_icon"),("Password","pass_icon")]
-    static var number = 0
+    override func viewModelChanged() {
+        super.viewModelChanged()
+        guard let viewModel = self.viewModel as? BaseCellViewModel else {
+            return
+        }
+        
+        //contentView.autoSetDimension(.height, toSize: viewModel.heightCell!)
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,13 +28,13 @@ class AuthTextFieldViewCell: BaseTableViewCell {
         textField.layer.borderWidth = 1.0
         textField.delegate = self
         print(viewModel.debugDescription)
-        if AuthTextFieldViewCell.number == 1 {
+        if AuthViewController.number == 1 {
             textField.isSecureTextEntry = true
         } else {
             textField.isSecureTextEntry = false
         }
-        let cellInfo = AuthTextFieldViewCell.textFieldArray[AuthTextFieldViewCell.number]
-        AuthTextFieldViewCell.number = (AuthTextFieldViewCell.number + 1) % AuthTextFieldViewCell.textFieldArray.count
+        let cellInfo = AuthViewController.textFieldArray[AuthViewController.number]
+        AuthViewController.number = (AuthViewController.number + 1) % AuthViewController.textFieldArray.count
         configurationTextField(placeholder: cellInfo.0, imageName: cellInfo.1)
     }
 

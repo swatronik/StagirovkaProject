@@ -14,6 +14,9 @@ import UIKit
     @IBOutlet weak var scrollView: UIScrollView!
     let tableManager = TableDataManager()
     
+    static var textFieldArray = [("Username","login_icon"),("Password","pass_icon")]
+    static var number = 0
+    
     let colorTop =  UIColor(red: 65.0/255.0, green: 90.0/255.0, blue: 202.0/255.0, alpha: 1.0).cgColor
     let colorBottom = UIColor(red: 46.0/255.0, green: 150.0/255.0, blue: 205.0/255.0, alpha: 1.0).cgColor
     let authCellId = "AuthTableViewCell"
