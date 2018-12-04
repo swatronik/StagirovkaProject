@@ -14,35 +14,28 @@ class AuthTextFieldViewCell: BaseTableViewCell {
     
     override func viewModelChanged() {
         super.viewModelChanged()
-        guard let viewModel = self.viewModel as? BaseCellViewModel else {
+        guard let viewModel = self.viewModel as? AuthTextFieldViewModel else {
             return
         }
-        
+        textField.isSecureTextEntry = viewModel.isSecure
+        textField.placeholder = viewModel.placeholderText
+        setLeftSideImage(imageName: viewModel.iconName)
         //contentView.autoSetDimension(.height, toSize: viewModel.heightCell!)
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        setBorder()
+        textField.delegate = self
+    }
+
+    private func setBorder() {
         textField.layer.cornerRadius = textField.bounds.height / 2
         textField.layer.borderWidth = 1.0
-        textField.delegate = self
-        print(viewModel.debugDescription)
-        if AuthViewController.number == 1 {
-            textField.isSecureTextEntry = true
-        } else {
-            textField.isSecureTextEntry = false
-        }
-        let cellInfo = AuthViewController.textFieldArray[AuthViewController.number]
-        AuthViewController.number = (AuthViewController.number + 1) % AuthViewController.textFieldArray.count
-        configurationTextField(placeholder: cellInfo.0, imageName: cellInfo.1)
+        textField.layer.borderColor = UIColor.lightGray.cgColor
     }
-
-    func configurationTextField(placeholder: String, imageName: String) {
-        textField.placeholder = placeholder
-        setLeftSideImage(imageName: imageName)
-    }
-
+    
     private func setLeftSideImage(imageName: String){
         
         let leftImageView = UIImageView()
@@ -104,11 +97,9 @@ extension AuthTextFieldViewCell: UITextFieldDelegate {
             return false
         }
         
-        if let newText = viewModel.newText {
-            newText(text)
+        if let newTextClosure = viewModel.newTextClosure {
+            newTextClosure(text)
         }
-        
-        print(text)
         
         return true
     }

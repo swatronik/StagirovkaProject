@@ -10,12 +10,18 @@ import UIKit
 
 class AuthTextFieldViewModel: BaseCellViewModel {
     
-    var newText: ((String)->Void)?
+    var iconName = ""
+    var isSecure = false
+    var placeholderText = ""
     
-    //    convenience init(eventModelShort: EventModel) {
-    //        self.init()
-    //        self.eventModelShort = eventModelShort
-    //    }
+    var newTextClosure: ((String)->Void)?
+    
+    convenience init (iconName: String, isSecure: Bool = false, placeholderText: String) {
+        self.init()
+        self.iconName = iconName
+        self.isSecure = isSecure
+        self.placeholderText = placeholderText
+    }
     
     override init() {
         super.init()

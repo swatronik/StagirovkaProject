@@ -15,6 +15,8 @@ class AuthButtonViewModel: BaseCellViewModel {
     //        self.eventModelShort = eventModelShort
     //    }
     
+    var actionClosure: (()->Void)?
+    
     override init() {
         super.init()
         cellClass = AuthButtonViewCell.self

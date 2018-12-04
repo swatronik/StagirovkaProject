@@ -29,6 +29,9 @@
                         <state key="normal" title="Log In">
                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
+                        <connections>
+                            <action selector="touchOnButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2sQ-Ht-5Vt"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

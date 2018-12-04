@@ -10,12 +10,13 @@ import UIKit
 
 @IBDesignable class AuthViewController: UIViewController {
     
+    var usernameText = ""
+    var passwordText = ""
+    
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var scrollView: UIScrollView!
     let tableManager = TableDataManager()
-    
-    static var textFieldArray = [("Username","login_icon"),("Password","pass_icon")]
-    static var number = 0
     
     let colorTop =  UIColor(red: 65.0/255.0, green: 90.0/255.0, blue: 202.0/255.0, alpha: 1.0).cgColor
     let colorBottom = UIColor(red: 46.0/255.0, green: 150.0/255.0, blue: 205.0/255.0, alpha: 1.0).cgColor
@@ -46,22 +47,35 @@ import UIKit
         arrayCellViewModels.append(authLabel)
         
         //let authViewModel = AuthCellViewModel()
-        let authTextFieldUsernameModel = AuthTextFieldViewModel()
+        let authTextFieldUsernameModel = AuthTextFieldViewModel(iconName: "login_icon", placeholderText: "Username")
         //authTextFieldUsername.configurationTextField(placeholder: "Username", imageName: "login_icon")
-        
+        authTextFieldUsernameModel.newTextClosure = { (currentText) in
+            self.usernameText = currentText
+        }
         arrayCellViewModels.append(authTextFieldUsernameModel)
         
-        let authTextFieldPasswordModel = AuthTextFieldViewModel()
+        let authTextFieldPasswordModel = AuthTextFieldViewModel(iconName: "pass_icon", isSecure: true, placeholderText: "Password")
         arrayCellViewModels.append(authTextFieldPasswordModel)
+        
+        authTextFieldPasswordModel.newTextClosure = { (currentText) in
+            self.passwordText = currentText
+        }
         
         let authButtonModel = AuthButtonViewModel()
         arrayCellViewModels.append(authButtonModel)
 
+        
+        authButtonModel.actionClosure = { () in
+            if !(self.usernameText.isEmpty || self.passwordText.isEmpty) {
+                print ("Username: " + self.usernameText)
+                print ("Password: " + self.passwordText)
+            }
+        }
         //cell.configurationTextField(placeholder: "Username", imageName: "login_icon")
+
         tableManager.tableView = tableView
         tableManager.arrayViewModels = arrayCellViewModels
     }
-    
     
     @objc func keyboard(notification: Notification) {
         guard let userInfo = notification.userInfo else {

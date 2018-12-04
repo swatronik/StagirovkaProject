@@ -8,9 +8,26 @@
 
 import UIKit
 
-class AuthButtonViewCell: UITableViewCell {
+class AuthButtonViewCell: BaseTableViewCell {
     
     @IBOutlet weak var button: UIButton!
+    
+    @IBAction func touchOnButton(_ sender: Any) {
+        guard let viewModel = self.viewModel as? AuthButtonViewModel else {
+            return
+        }
+        if let actionClosure = viewModel.actionClosure {
+            actionClosure()
+        }
+    }
+    
+    override func viewModelChanged() {
+        super.viewModelChanged()
+        guard let viewModel = self.viewModel as? AuthButtonViewModel else {
+            return
+        }
+        //contentView.autoSetDimension(.height, toSize: viewModel.heightCell!)
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
