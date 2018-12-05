@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5505D2CA21A2BDB300600AA9 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5505D2C521A2BDB300600AA9 /* EmptyCell.swift */; };
+		5505D2CB21A2BDB300600AA9 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5505D2C621A2BDB300600AA9 /* BaseTableViewCell.swift */; };
+		5505D2CC21A2BDB300600AA9 /* TableDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5505D2C721A2BDB300600AA9 /* TableDataManager.swift */; };
+		5505D2CD21A2BDB300600AA9 /* EmptyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5505D2C821A2BDB300600AA9 /* EmptyViewModel.swift */; };
+		5505D2CE21A2BDB300600AA9 /* BaseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5505D2C921A2BDB300600AA9 /* BaseCellViewModel.swift */; };
 		8436DE3221905B51002930A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436DE3121905B51002930A9 /* AppDelegate.swift */; };
 		8436DE3921905B5C002930A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8436DE3821905B5C002930A9 /* Assets.xcassets */; };
 		8436DE3C21905B5C002930A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8436DE3A21905B5C002930A9 /* LaunchScreen.storyboard */; };
 		8436DE4721905B5D002930A9 /* StagirovkaProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436DE4621905B5D002930A9 /* StagirovkaProjectTests.swift */; };
 		8436DE5221905B5D002930A9 /* StagirovkaProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436DE5121905B5D002930A9 /* StagirovkaProjectUITests.swift */; };
-		8436DE6221905BC4002930A9 /* AuthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8436DE6121905BC4002930A9 /* AuthView.xib */; };
 		8436DE6421905C69002930A9 /* AuthStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8436DE6321905C69002930A9 /* AuthStoryBoard.storyboard */; };
-		8436DE6821906412002930A9 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436DE6721906412002930A9 /* AuthView.swift */; };
 		8436DE6E219072F0002930A9 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436DE6D219072F0002930A9 /* AuthViewController.swift */; };
+		8485D61621A55B2300E74961 /* AuthTextFieldViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485D61421A55B2300E74961 /* AuthTextFieldViewCell.swift */; };
+		8485D61721A55B2300E74961 /* AuthTextFieldViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8485D61521A55B2300E74961 /* AuthTextFieldViewCell.xib */; };
+		8485D61921A5619300E74961 /* AuthTextFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485D61821A5619300E74961 /* AuthTextFieldViewModel.swift */; };
+		8485D61E21A5769D00E74961 /* AuthLabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485D61C21A5769D00E74961 /* AuthLabelViewCell.swift */; };
+		8485D61F21A5769D00E74961 /* AuthLabelViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8485D61D21A5769D00E74961 /* AuthLabelViewCell.xib */; };
+		8485D62121A577E600E74961 /* AuthLabelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485D62021A577E600E74961 /* AuthLabelViewModel.swift */; };
+		8485D62521A57A9B00E74961 /* AuthButtonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485D62321A57A9B00E74961 /* AuthButtonViewCell.swift */; };
+		8485D62621A57A9B00E74961 /* AuthButtonViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8485D62421A57A9B00E74961 /* AuthButtonViewCell.xib */; };
+		8485D62821A57AF100E74961 /* AuthButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485D62721A57AF100E74961 /* AuthButtonViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5505D2C521A2BDB300600AA9 /* EmptyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
+		5505D2C621A2BDB300600AA9 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		5505D2C721A2BDB300600AA9 /* TableDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataManager.swift; sourceTree = "<group>"; };
+		5505D2C821A2BDB300600AA9 /* EmptyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewModel.swift; sourceTree = "<group>"; };
+		5505D2C921A2BDB300600AA9 /* BaseCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCellViewModel.swift; sourceTree = "<group>"; };
 		8436DE2E21905B51002930A9 /* StagirovkaProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StagirovkaProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8436DE3121905B51002930A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8436DE3821905B5C002930A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,10 +64,17 @@
 		8436DE4D21905B5D002930A9 /* StagirovkaProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StagirovkaProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8436DE5121905B5D002930A9 /* StagirovkaProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StagirovkaProjectUITests.swift; sourceTree = "<group>"; };
 		8436DE5321905B5D002930A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8436DE6121905BC4002930A9 /* AuthView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthView.xib; sourceTree = "<group>"; };
 		8436DE6321905C69002930A9 /* AuthStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthStoryBoard.storyboard; sourceTree = "<group>"; };
-		8436DE6721906412002930A9 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		8436DE6D219072F0002930A9 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		8485D61421A55B2300E74961 /* AuthTextFieldViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextFieldViewCell.swift; sourceTree = "<group>"; };
+		8485D61521A55B2300E74961 /* AuthTextFieldViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthTextFieldViewCell.xib; sourceTree = "<group>"; };
+		8485D61821A5619300E74961 /* AuthTextFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextFieldViewModel.swift; sourceTree = "<group>"; };
+		8485D61C21A5769D00E74961 /* AuthLabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLabelViewCell.swift; sourceTree = "<group>"; };
+		8485D61D21A5769D00E74961 /* AuthLabelViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthLabelViewCell.xib; sourceTree = "<group>"; };
+		8485D62021A577E600E74961 /* AuthLabelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLabelViewModel.swift; sourceTree = "<group>"; };
+		8485D62321A57A9B00E74961 /* AuthButtonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButtonViewCell.swift; sourceTree = "<group>"; };
+		8485D62421A57A9B00E74961 /* AuthButtonViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthButtonViewCell.xib; sourceTree = "<group>"; };
+		8485D62721A57AF100E74961 /* AuthButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButtonViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +102,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5505D2C221A2BDB300600AA9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5505D2C321A2BDB300600AA9 /* UI */,
+				5505D2C421A2BDB300600AA9 /* TableDataManager */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5505D2C321A2BDB300600AA9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5505D2C421A2BDB300600AA9 /* TableDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				5505D2C521A2BDB300600AA9 /* EmptyCell.swift */,
+				5505D2C621A2BDB300600AA9 /* BaseTableViewCell.swift */,
+				5505D2C721A2BDB300600AA9 /* TableDataManager.swift */,
+				5505D2C821A2BDB300600AA9 /* EmptyViewModel.swift */,
+				5505D2C921A2BDB300600AA9 /* BaseCellViewModel.swift */,
+			);
+			path = TableDataManager;
+			sourceTree = "<group>";
+		};
 		8436DE2521905B50002930A9 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +153,7 @@
 		8436DE3021905B51002930A9 /* StagirovkaProject */ = {
 			isa = PBXGroup;
 			children = (
+				5505D2C221A2BDB300600AA9 /* Helpers */,
 				8436DE6021905B80002930A9 /* Authorization */,
 				8436DE3121905B51002930A9 /* AppDelegate.swift */,
 				8436DE3821905B5C002930A9 /* Assets.xcassets */,
@@ -131,12 +184,51 @@
 		8436DE6021905B80002930A9 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
-				8436DE6121905BC4002930A9 /* AuthView.xib */,
+				8485D61321A55AED00E74961 /* Cell */,
 				8436DE6321905C69002930A9 /* AuthStoryBoard.storyboard */,
 				8436DE6D219072F0002930A9 /* AuthViewController.swift */,
-				8436DE6721906412002930A9 /* AuthView.swift */,
 			);
 			path = Authorization;
+			sourceTree = "<group>";
+		};
+		8485D61321A55AED00E74961 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8485D62221A57A6B00E74961 /* Button */,
+				8485D61B21A5764100E74961 /* Label */,
+				8485D61A21A565F100E74961 /* TextField */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8485D61A21A565F100E74961 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				8485D61521A55B2300E74961 /* AuthTextFieldViewCell.xib */,
+				8485D61421A55B2300E74961 /* AuthTextFieldViewCell.swift */,
+				8485D61821A5619300E74961 /* AuthTextFieldViewModel.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		8485D61B21A5764100E74961 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				8485D61D21A5769D00E74961 /* AuthLabelViewCell.xib */,
+				8485D61C21A5769D00E74961 /* AuthLabelViewCell.swift */,
+				8485D62021A577E600E74961 /* AuthLabelViewModel.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		8485D62221A57A6B00E74961 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				8485D62421A57A9B00E74961 /* AuthButtonViewCell.xib */,
+				8485D62321A57A9B00E74961 /* AuthButtonViewCell.swift */,
+				8485D62721A57AF100E74961 /* AuthButtonViewModel.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,9 +336,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8436DE3C21905B5C002930A9 /* LaunchScreen.storyboard in Resources */,
+				8485D61F21A5769D00E74961 /* AuthLabelViewCell.xib in Resources */,
 				8436DE3921905B5C002930A9 /* Assets.xcassets in Resources */,
-				8436DE6221905BC4002930A9 /* AuthView.xib in Resources */,
 				8436DE6421905C69002930A9 /* AuthStoryBoard.storyboard in Resources */,
+				8485D61721A55B2300E74961 /* AuthTextFieldViewCell.xib in Resources */,
+				8485D62621A57A9B00E74961 /* AuthButtonViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,9 +365,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8485D62121A577E600E74961 /* AuthLabelViewModel.swift in Sources */,
+				8485D62821A57AF100E74961 /* AuthButtonViewModel.swift in Sources */,
+				5505D2CE21A2BDB300600AA9 /* BaseCellViewModel.swift in Sources */,
+				5505D2CA21A2BDB300600AA9 /* EmptyCell.swift in Sources */,
+				8485D61E21A5769D00E74961 /* AuthLabelViewCell.swift in Sources */,
+				5505D2CD21A2BDB300600AA9 /* EmptyViewModel.swift in Sources */,
 				8436DE3221905B51002930A9 /* AppDelegate.swift in Sources */,
+				5505D2CB21A2BDB300600AA9 /* BaseTableViewCell.swift in Sources */,
+				8485D61621A55B2300E74961 /* AuthTextFieldViewCell.swift in Sources */,
+				5505D2CC21A2BDB300600AA9 /* TableDataManager.swift in Sources */,
+				8485D62521A57A9B00E74961 /* AuthButtonViewCell.swift in Sources */,
+				8485D61921A5619300E74961 /* AuthTextFieldViewModel.swift in Sources */,
 				8436DE6E219072F0002930A9 /* AuthViewController.swift in Sources */,
-				8436DE6821906412002930A9 /* AuthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
