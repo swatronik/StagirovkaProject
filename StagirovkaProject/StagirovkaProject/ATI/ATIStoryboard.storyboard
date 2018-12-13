@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4eZ-gf-lPl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="lHN-ax-haA">
+            <objects>
+                <viewController id="4eZ-gf-lPl" customClass="ATIViewController" customModule="StagirovkaProject" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DcH-Bn-mln">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTV-RD-uRK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cTV-RD-uRK" firstAttribute="trailing" secondItem="eJd-op-ZGR" secondAttribute="trailing" id="2td-JS-jAH"/>
+                            <constraint firstItem="cTV-RD-uRK" firstAttribute="leading" secondItem="eJd-op-ZGR" secondAttribute="leading" id="7Wo-Jf-xOd"/>
+                            <constraint firstItem="cTV-RD-uRK" firstAttribute="top" secondItem="eJd-op-ZGR" secondAttribute="top" id="ZIM-sb-oVe"/>
+                            <constraint firstItem="cTV-RD-uRK" firstAttribute="bottom" secondItem="eJd-op-ZGR" secondAttribute="bottom" id="pkG-vR-euI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eJd-op-ZGR"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="cTV-RD-uRK" id="zUF-dM-tta"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ImU-Vn-S2t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-255.19999999999999" y="-64.31784107946028"/>
+        </scene>
+    </scenes>
+</document>

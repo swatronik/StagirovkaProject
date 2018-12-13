@@ -19,6 +19,9 @@
 		8436DE5221905B5D002930A9 /* StagirovkaProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436DE5121905B5D002930A9 /* StagirovkaProjectUITests.swift */; };
 		8436DE6421905C69002930A9 /* AuthStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8436DE6321905C69002930A9 /* AuthStoryBoard.storyboard */; };
 		8436DE6E219072F0002930A9 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436DE6D219072F0002930A9 /* AuthViewController.swift */; };
+		8465976021C25D1100257D84 /* ATIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465975F21C25D1100257D84 /* ATIViewController.swift */; };
+		8465976221C27DC000257D84 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465976121C27DC000257D84 /* KeychainService.swift */; };
+		8484647A21C254280027EE89 /* ATIStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8484647921C254280027EE89 /* ATIStoryboard.storyboard */; };
 		8485D61621A55B2300E74961 /* AuthTextFieldViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485D61421A55B2300E74961 /* AuthTextFieldViewCell.swift */; };
 		8485D61721A55B2300E74961 /* AuthTextFieldViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8485D61521A55B2300E74961 /* AuthTextFieldViewCell.xib */; };
 		8485D61921A5619300E74961 /* AuthTextFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485D61821A5619300E74961 /* AuthTextFieldViewModel.swift */; };
@@ -66,6 +69,9 @@
 		8436DE5321905B5D002930A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8436DE6321905C69002930A9 /* AuthStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthStoryBoard.storyboard; sourceTree = "<group>"; };
 		8436DE6D219072F0002930A9 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		8465975F21C25D1100257D84 /* ATIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATIViewController.swift; sourceTree = "<group>"; };
+		8465976121C27DC000257D84 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		8484647921C254280027EE89 /* ATIStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ATIStoryboard.storyboard; sourceTree = "<group>"; };
 		8485D61421A55B2300E74961 /* AuthTextFieldViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextFieldViewCell.swift; sourceTree = "<group>"; };
 		8485D61521A55B2300E74961 /* AuthTextFieldViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthTextFieldViewCell.xib; sourceTree = "<group>"; };
 		8485D61821A5619300E74961 /* AuthTextFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextFieldViewModel.swift; sourceTree = "<group>"; };
@@ -156,6 +162,7 @@
 				5505D2C221A2BDB300600AA9 /* Helpers */,
 				8436DE6021905B80002930A9 /* Authorization */,
 				8436DE3121905B51002930A9 /* AppDelegate.swift */,
+				8484647821C253D60027EE89 /* ATI */,
 				8436DE3821905B5C002930A9 /* Assets.xcassets */,
 				8436DE3A21905B5C002930A9 /* LaunchScreen.storyboard */,
 				8436DE3D21905B5C002930A9 /* Info.plist */,
@@ -189,6 +196,16 @@
 				8436DE6D219072F0002930A9 /* AuthViewController.swift */,
 			);
 			path = Authorization;
+			sourceTree = "<group>";
+		};
+		8484647821C253D60027EE89 /* ATI */ = {
+			isa = PBXGroup;
+			children = (
+				8484647921C254280027EE89 /* ATIStoryboard.storyboard */,
+				8465975F21C25D1100257D84 /* ATIViewController.swift */,
+				8465976121C27DC000257D84 /* KeychainService.swift */,
+			);
+			path = ATI;
 			sourceTree = "<group>";
 		};
 		8485D61321A55AED00E74961 /* Cell */ = {
@@ -341,6 +358,7 @@
 				8436DE6421905C69002930A9 /* AuthStoryBoard.storyboard in Resources */,
 				8485D61721A55B2300E74961 /* AuthTextFieldViewCell.xib in Resources */,
 				8485D62621A57A9B00E74961 /* AuthButtonViewCell.xib in Resources */,
+				8484647A21C254280027EE89 /* ATIStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,10 +386,12 @@
 				8485D62121A577E600E74961 /* AuthLabelViewModel.swift in Sources */,
 				8485D62821A57AF100E74961 /* AuthButtonViewModel.swift in Sources */,
 				5505D2CE21A2BDB300600AA9 /* BaseCellViewModel.swift in Sources */,
+				8465976021C25D1100257D84 /* ATIViewController.swift in Sources */,
 				5505D2CA21A2BDB300600AA9 /* EmptyCell.swift in Sources */,
 				8485D61E21A5769D00E74961 /* AuthLabelViewCell.swift in Sources */,
 				5505D2CD21A2BDB300600AA9 /* EmptyViewModel.swift in Sources */,
 				8436DE3221905B51002930A9 /* AppDelegate.swift in Sources */,
+				8465976221C27DC000257D84 /* KeychainService.swift in Sources */,
 				5505D2CB21A2BDB300600AA9 /* BaseTableViewCell.swift in Sources */,
 				8485D61621A55B2300E74961 /* AuthTextFieldViewCell.swift in Sources */,
 				5505D2CC21A2BDB300600AA9 /* TableDataManager.swift in Sources */,

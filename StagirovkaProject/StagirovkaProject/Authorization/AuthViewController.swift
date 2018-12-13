@@ -27,7 +27,7 @@ import UIKit
         setGradientBackground()
         tableView.allowsSelection = false
         tableView.layer.cornerRadius = 20
-
+        
         NotificationCenter.default.addObserver(self, selector: #selector(keyboard), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
         
@@ -69,6 +69,10 @@ import UIKit
             if !(self.usernameText.isEmpty || self.passwordText.isEmpty) {
                 print ("Username: " + self.usernameText)
                 print ("Password: " + self.passwordText)
+                if let nextViewController = UIStoryboard(name: "ATIStoryboard", bundle: nil).instantiateInitialViewController() {
+                    nextViewController.modalTransitionStyle = .crossDissolve
+                    self.present(nextViewController, animated: true, completion: nil)
+                }
             }
         }
         //cell.configurationTextField(placeholder: "Username", imageName: "login_icon")
